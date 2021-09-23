@@ -1,0 +1,174 @@
+.rankingHeaderContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.rankingHeader {
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.rankingSubHeader {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.searchRank {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.tableContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Loading Dots */
+.loadingDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    overflow: hidden;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+  }
+
+.loadingDots {
+    display: flex;
+    justify-content: space-around;
+}
+
+[data-theme='dark'] .loadingDots {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    animation: dotElastic 1s infinite linear;
+  }
+
+  [data-theme='light'] .loadingDots {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #000000;
+    animation: dotElastic 1s infinite linear;
+  }
+  
+  .loadingDots::before, .loadingDots::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+  
+  [data-theme='light'] .loadingDots::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #000000;
+    animation: dotElasticBefore 1s infinite linear;
+  }
+
+  [data-theme='dark'] .loadingDots::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    animation: dotElasticBefore 1s infinite linear;
+  }
+  
+  [data-theme='light'] .loadingDots::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #000000;
+    animation: dotElasticAfter 1s infinite linear;
+  }
+
+  [data-theme='dark'] .loadingDots::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    animation: dotElasticAfter 1s infinite linear;
+  }
+  
+  @keyframes dotElasticBefore {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1.5);
+    }
+    50% {
+      transform: scale(1, 0.67);
+    }
+    75% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes dotElastic {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1, 1.5);
+    }
+    75% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes dotElasticAfter {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1, 0.67);
+    }
+    75% {
+      transform: scale(1, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
