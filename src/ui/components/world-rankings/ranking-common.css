@@ -1,7 +1,13 @@
 .rankingHeaderContainer {
+    padding: 40px;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 50px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.rankingHeaderContainer div {
+  padding-bottom: 10px;
 }
 
 .rankingHeader {
@@ -172,3 +178,5 @@
       transform: scale(1, 1);
     }
   }
+
+  

@@ -32,15 +32,6 @@ const WorldRankingTable = () => {
                             Number of Events
                         </th>
                         <th>
-                            Average Points
-                        </th>
-                        <th>
-                            Points Gained
-                        </th>
-                        <th>
-                            Points Lost
-                        </th>
-                        <th>
                             Total Points
                         </th>
                     </tr>
@@ -52,9 +43,6 @@ const WorldRankingTable = () => {
                             <th>{player.position}</th>
                             <td>{player.player_name}</td>
                             <td>{player.num_events}</td>
-                            <td>{player.avg_points}</td>
-                            <td>{player.points_gained}</td>
-                            <td>{player.points_lost}</td>
                             <td>{player.total_points}</td>
                         </tr>
                     ))}
